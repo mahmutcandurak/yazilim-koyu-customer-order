@@ -8,6 +8,9 @@ public class OrderItem {
 
     private Taxable taxable = new Hardware();
 
+    public OrderItem() {
+
+    }
     public OrderItem(int lineNbr, Product product, int quantity) {
         this.lineNbr = lineNbr;
         this.product = product;
@@ -47,6 +50,6 @@ public class OrderItem {
     }
 
     public double getUnitPrice() {
-        return Double.parseDouble(product.getRetailPrice());
+        return Double.parseDouble(String.valueOf(product.getRetailPrice()));
     }
 }
