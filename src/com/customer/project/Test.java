@@ -46,6 +46,7 @@ public class Test {
         Customer individual2 = new Individual("Üsküdar","Ceren Aygün","3256845218",2,"556677");
 
         System.out.println("WELCOME TO CUSTOMER - ORDER REGISTER SYSTEM ");
+        System.out.println("----------------******----------------------");
         System.out.println("Please choose your product:");
 
         for (Product x : productList) {
@@ -56,63 +57,67 @@ public class Test {
         String productChosen = null;
         Double productPrice = null;
 
-        switch (productChoice) {
-            case 1:
-                if (orderItem1.getQuantity()==0) {
-                    System.out.println("We dont have any " + product1.getName());
-                }
-                else {
-                    System.out.println("LG monitor chosen.");
-                    productChosen = product1.getName();
-                    productPrice = product1.getRetailPrice();
-                    orderItem1.setQuantity(orderItem1.getQuantity()-1);
-                }
-                break;
-            case 2:
-                if (orderItem2.getQuantity()==0) {
-                    System.out.println("We dont have any " + product2.getName());
-                }
-                else{
-                    System.out.println("ManuelPro chosen.");
-                    productChosen = product2.getName();
-                    productPrice = product2.getRetailPrice();
-                    orderItem2.setQuantity(orderItem2.getQuantity()-1);
-                }
-                break;
-            case 3:
-                if (orderItem3.getQuantity()==0) {
-                    System.out.println("We dont have any " + product3.getName());
-                }
-                else{
-                    System.out.println("Wim10 chosen.");
-                    productChosen = product2.getName();
-                    productPrice = product3.getRetailPrice();
-                    orderItem3.setQuantity(orderItem3.getQuantity()-1);
-                }
-                break;
-            case 4:
-                if (orderItem4.getQuantity()==0) {
-                    System.out.println("We dont have any " + product4.getName());
-                }
-                else {
-                    System.out.println("TV chosen");
-                    productChosen = product4.getName();
-                    productPrice = product4.getRetailPrice();
-                    orderItem4.setQuantity(orderItem4.getQuantity()-1);
-                }
-                break;
-            case 5:
-                if (orderItem5.getQuantity()==0) {
-                    System.out.println("We dont have any " + product5.getName());
-                }
-                else {
-                    System.out.println("Random key chosen");
-                    productChosen = product5.getName();
-                    productPrice = product5.getRetailPrice();
-                    orderItem5.setQuantity(orderItem5.getQuantity()-1);
-                }
-                break;
-        }
+            switch (productChoice) {
+                case 1:
+                    if (orderItem1.getQuantity()==0) {
+                        System.out.println("We dont have any " + product1.getName());
+                    }
+                    else {
+                        System.out.println("LG monitor chosen.");
+                        productChosen = product1.getName();
+                        productPrice = product1.getRetailPrice();
+                        orderItem1.setQuantity(orderItem1.getQuantity()-1);
+                    }
+                    break;
+                case 2:
+                    if (orderItem2.getQuantity()==0) {
+                        System.out.println("We dont have any " + product2.getName());
+                    }
+                    else{
+                        System.out.println("ManuelPro chosen.");
+                        productChosen = product2.getName();
+                        productPrice = product2.getRetailPrice();
+                        orderItem2.setQuantity(orderItem2.getQuantity()-1);
+                    }
+                    break;
+                case 3:
+                    if (orderItem3.getQuantity()==0) {
+                        System.out.println("We dont have any " + product3.getName());
+                    }
+                    else{
+                        System.out.println("Wim10 chosen.");
+                        productChosen = product2.getName();
+                        productPrice = product3.getRetailPrice();
+                        orderItem3.setQuantity(orderItem3.getQuantity()-1);
+                    }
+                    break;
+                case 4:
+                    if (orderItem4.getQuantity()==0) {
+                        System.out.println("We dont have any " + product4.getName());
+                    }
+                    else {
+                        System.out.println("TV chosen");
+                        productChosen = product4.getName();
+                        productPrice = product4.getRetailPrice();
+                        orderItem4.setQuantity(orderItem4.getQuantity()-1);
+                    }
+                    break;
+                case 5:
+                    if (orderItem5.getQuantity()==0) {
+                        System.out.println("We dont have any " + product5.getName());
+                    }
+                    else {
+                        System.out.println("Random key chosen");
+                        productChosen = product5.getName();
+                        productPrice = product5.getRetailPrice();
+                        orderItem5.setQuantity(orderItem5.getQuantity()-1);
+                    }
+                    break;
+                default:
+                    System.out.println("Wrong choice. Please give correct number.");
+            }
+
+
 
         System.out.println("Please choose your user type: 1-Company 2- Individual");
 
@@ -144,7 +149,6 @@ public class Test {
                 strChosen = individual2.getName();
             }
         }
-
 
         List<String> orderList = new ArrayList(Arrays.asList(productChosen,strChosen));
 
