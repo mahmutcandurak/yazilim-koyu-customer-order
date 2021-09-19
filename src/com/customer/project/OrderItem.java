@@ -6,6 +6,7 @@ public class OrderItem {
     private Product product;
     private int quantity;
 
+    private Taxable taxable = new Hardware();
 
     public OrderItem(int lineNbr, Product product, int quantity) {
         this.lineNbr = lineNbr;
@@ -17,12 +18,24 @@ public class OrderItem {
         return lineNbr;
     }
 
+    public void setLineNbr(int lineNbr) {
+        this.lineNbr = lineNbr;
+    }
+
     public Product getProduct() {
         return product;
     }
 
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
     public int getQuantity() {
         return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public double getItemTotal() {
@@ -30,10 +43,10 @@ public class OrderItem {
     }
 
     public double getTax () {
-        return 0;
+        return this.taxable.getTax();
     }
 
     public double getUnitPrice() {
-        return 0;
+        return Double.parseDouble(product.getRetailPrice());
     }
 }

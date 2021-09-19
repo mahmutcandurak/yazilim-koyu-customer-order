@@ -4,6 +4,9 @@ public class Hardware extends Product implements Taxable{
 
     private int warrantyPeriod;
 
+    public Hardware() {
+    }
+
     public Hardware(int warrantyPeriod) {
         this.warrantyPeriod = warrantyPeriod;
     }

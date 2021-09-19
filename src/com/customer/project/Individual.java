@@ -4,6 +4,14 @@ public class Individual extends Customer {
 
     private String licNumber;
 
+    public Individual() {
+    }
+
+    public Individual(String address, String name, String phone, int id, String licNumber) {
+        super(address, name, phone, id);
+        this.licNumber = licNumber;
+    }
+
     public Individual(String licNumber) {
         this.licNumber = licNumber;
     }
