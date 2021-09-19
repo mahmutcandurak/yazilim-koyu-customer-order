@@ -15,8 +15,11 @@ public class Order {
     public Order() {
     }
 
-    public Order(Customer customer) {
+    public Order(Customer customer, DefaultListModel item, Date orderDate, double orderTotal) {
         this.customer = customer;
+        this.item = item;
+        this.orderDate = orderDate;
+        this.orderTotal = orderTotal;
     }
 
     public static void addOrderItem (int id) {

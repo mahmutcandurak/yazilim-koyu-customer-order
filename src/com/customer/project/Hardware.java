@@ -8,6 +8,7 @@ public class Hardware extends Product implements Taxable{
         this.warrantyPeriod = warrantyPeriod;
     }
 
+
     public int getWarrantyPeriod() {
         return warrantyPeriod;
     }

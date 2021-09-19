@@ -5,9 +5,10 @@ public class Company extends Customer {
     private String contact;
     private int discount;
 
-    public Company(int id, String contact) {
-        super(id);
+    public Company(String address, String name, String phone, int id, String contact, int discount) {
+        super(address, name, phone, id);
         this.contact = contact;
+        this.discount = discount;
     }
 
     public String getContact() {

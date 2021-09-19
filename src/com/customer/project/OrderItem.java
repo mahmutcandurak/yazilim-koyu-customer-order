@@ -6,8 +6,11 @@ public class OrderItem {
     private Product product;
     private int quantity;
 
-    public OrderItem(int lineNbr) {
+
+    public OrderItem(int lineNbr, Product product, int quantity) {
         this.lineNbr = lineNbr;
+        this.product = product;
+        this.quantity = quantity;
     }
 
     public int getLineNbr() {
