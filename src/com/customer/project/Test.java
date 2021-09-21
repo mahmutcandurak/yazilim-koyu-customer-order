@@ -81,7 +81,7 @@ public class Test implements Taxable {
 
         System.out.println("Please choose your product:");
 
-        //Urunleri tuttugumuz listeyi donduren foreach blogu.
+        //Urunleri tuttugumuz listeyi donduren foreach blogu
         for (Product x : productList) {
             System.out.println((productList.indexOf(x)+1) + " " +x.getName() + " Price: " + x.getRetailPrice());
         }
