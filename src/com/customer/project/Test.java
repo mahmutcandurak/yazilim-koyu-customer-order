@@ -53,7 +53,7 @@ public class Test implements Taxable {
         int userTypeChosen = 0;
 
 
-        //İslemlerin sirket olarak mi yoksa bireysel olarak mi yapılacagini sorgulayan if bloklari.
+        //Islemlerin sirket olarak mi yoksa bireysel olarak mi yapilacagini sorgulayan if bloklari.
         //Tercihe gore hangi sirket ya da hangi kullanici oldugu bilgisini de sorguluyoruz.
         if(userTypeChoise == 1) {
             System.out.println("Choose your company: 1- " + company1.getName() + " 2: " + company2.getName());
@@ -99,7 +99,7 @@ public class Test implements Taxable {
                         System.out.println("We dont have any " + product1.getName());
                     }
                     else {
-                        System.out.println("LG monitor chosen.");
+                        System.out.println("LG monitor was chosen.");
                         productChosen = product1.getName();
                         selectedProductList.add(productChosen);
                         productPrice = (product1.getRetailPrice())+((product1.getRetailPrice()) * orderItem1.getTax());
@@ -113,7 +113,7 @@ public class Test implements Taxable {
                         System.out.println("We dont have any " + product2.getName());
                     }
                     else{
-                        System.out.println("ManuelPro chosen.");
+                        System.out.println("ManuelPro was chosen.");
                         selectedProductList.add(product2.getName());
                         productPrice = product2.getRetailPrice();
                         selectedPriceList.add(productPrice);
@@ -126,7 +126,7 @@ public class Test implements Taxable {
                         System.out.println("We dont have any " + product3.getName());
                     }
                     else{
-                        System.out.println("Win10 chosen.");
+                        System.out.println("Windows10 was chosen.");
                         selectedProductList.add(product3.getName());
                         productPrice = product3.getRetailPrice();
                         selectedPriceList.add(productPrice);
@@ -139,7 +139,7 @@ public class Test implements Taxable {
                         System.out.println("We dont have any " + product4.getName());
                     }
                     else {
-                        System.out.println("TV chosen");
+                        System.out.println("LG TV was chosen");
                         selectedProductList.add(product4.getName());
                         productPrice = (product4.getRetailPrice())+((product4.getRetailPrice()) * orderItem4.getTax());
                         selectedPriceList.add(productPrice);
@@ -152,8 +152,8 @@ public class Test implements Taxable {
                         System.out.println("We dont have any " + product5.getName());
                     }
                     else {
-                        System.out.println("Random key chosen");
-                        selectedProductList.add(product4.getName());
+                        System.out.println("Steam Random key was chosen");
+                        selectedProductList.add(product5.getName());
                         productPrice = product5.getRetailPrice();
                         selectedPriceList.add(productPrice);
                         orderItem5.setQuantity(orderItem5.getQuantity()-1);
