@@ -194,10 +194,3 @@ public class Test implements Taxable {
     }
 }
 
-
-/*
-        List<String> orderList = new ArrayList(Arrays.asList(productChosen,strChosen));
-
-        System.out.println("Selected product: " + productChosen + " Price with tax: " + productPrice + "$");
-        System.out.println("Customer: " + strChosen);
- */
